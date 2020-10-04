@@ -1,0 +1,127 @@
+:root
+{
+	--c1:#09113a;
+	--c2:#2196f3;
+	--c3:#673ab7;
+	--c4:#e91e63;
+}
+
+body
+{
+	margin:0;
+	font-family: verdana;
+}
+
+*
+{
+	text-decoration: none;
+	font-weight: normal;
+	list-style: none;
+	outline:0;
+	border:0;
+	box-sizing: border-box;
+}
+
+input,button,a
+{
+	padding: 10px;
+}
+
+.header
+{
+	line-height: 10vh;
+	background:var(--c1);
+}
+.header a
+{
+	color:white;
+	transition: 0.3s;
+}
+.header a:hover
+{
+	background:var(--c2);
+}
+
+.footer
+{
+	line-height: 10vh;
+	background: var(--c1);
+	color:white;
+	text-align: center;
+}
+
+.main
+{
+	height: 80vh;
+	overflow: auto;
+}
+
+
+.home
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.home form
+{
+	width:40%;
+	padding: 2.5%;
+	margin:5%;
+	border-top: 10px solid black;
+	box-shadow:0 10px 10px black;
+	background: var(--c1);
+	color:white;
+}
+.home form input
+{
+	width: 100%;
+	margin-bottom: 2%;
+}
+.home form button
+{
+	background: var(--c4);
+	color:white;
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+
+.container
+{
+	display: flex;
+}
+.container .left
+{
+	width:20%;
+	background: var(--c3);
+	color:white;
+	height: 80vh;
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(0%);
+	transition: 0.3s;
+
+}
+.container .active
+{
+	transform: translateX(-100%);
+}
+.container .left p
+{
+	padding: 10px;
+	width: 100%;
+}
+.container .left p:hover
+{
+	background: var(--c2);
+	color:white;
+}
+.container .right
+{
+	width: 80%;
+	padding: 2%;
+}
